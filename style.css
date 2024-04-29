@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-color: #000000;
+  --bg-table: #092d38;
+  --br-table: #4A808C;
+  --bg-button: #065e7c;
+  --color-remove: #f75a68;
+  --bg-input: #06181c;
+  --bg-evenRow: rgba(6, 22, 29, 50%);
+}
+
+body * {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+  padding: 11.5rem 16rem;
+}
+
+#app {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 112rem;
+}
+
+header {
+  height: 4.8rem;
+  width: 112rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8.7rem;
+}
+
+header .search {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+header input,
+button {
+  border-radius: 0.5rem;
+}
+
+header input {
+  width: 46.2rem;
+  height: 4.8rem;
+  padding: 0.8rem;
+  background-color: var(--bg-input);
+  color: #fff;
+  border: none;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+input::placeholder {
+  font-weight: normal;
+}
+
+header button {
+  padding: 1.2rem 3.2rem;
+  background-color: var(--bg-button);
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  border: none;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #247895;
+}
+
+table {
+  width: 100%;
+  color: #fff;
+  background-color: var(--bg-table);
+  font-size: 2rem;
+  line-height: 160%;
+  border-collapse: collapse;
+  border: 1px solid var(--br-table);
+  border-radius: 1rem;
+}
+
+thead tr {
+  text-align: left;
+}
+
+thead tr th {
+  padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+
+table td {
+  padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+
+table .user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+table .user a {
+  text-decoration: none;
+  color: #fff;
+}
+
+table .user p {
+  font-weight: normal;
+}
+
+table td img {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+}
+
+table td .remove {
+  background-color: transparent;
+  color: var(--color-remove);
+  border: none;
+  font-size: 2rem;
+
+  cursor: pointer;
+}
+
+tbody tr:nth-child(odd) {
+  background: var(--bg-evenRow);
+}
+
+tbody tr:nth-child(even) {
+  background: var(--bg-button);
+}
